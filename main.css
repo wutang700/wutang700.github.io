@@ -1,0 +1,370 @@
+/* https://coolors.co/d7dedc-cfcfcd-9a879d-7a3b69-563440 */
+/* https://coolors.co/eeeeff-7f7caf-9fb4c7-28587b-9fb798 */
+
+body {
+  background-color: #f4f4f4;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+#header {
+  background-color: #f4f4f4;
+}
+
+#tabHeader {
+  background-color: #a0a0a0;
+}
+
+#headercontents {
+  padding: 10px 20px;
+}
+
+#footer {
+  border-top: 1px solid #a08080;
+  margin-top: 20px;
+  padding-top: 20px;
+  height: 50px;
+}
+
+.tab-contents {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.boldText {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(244,67,54);
+}
+
+.title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.titlesmall {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.controls {
+  position: fixed;
+  bottom: 48px;
+  right: 24px;
+/*  height: 100px; */
+}
+
+.errorText {
+  color: red;
+}
+
+.errormsg {
+  color: red;
+  font-family: Varela Round;
+  font-size: 12px;
+}
+
+.pending {
+  color: blue;
+}
+
+#userinfo {
+  height: 100%;
+  padding: 10px;
+  float: right;
+}
+
+#logout {
+  height: 100%; 
+  float: right;
+}
+
+#login {
+  height: 100%; 
+  float: right;
+}
+
+#accessCode {
+  margin-top: 20px;
+}
+
+/* Draw tab elements */
+#etchCanvas {
+}
+
+#currentDeviceInfo {
+  font-size: 14px;
+  color: #303030;
+  padding-bottom: 5px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+#fileUploadButton {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  padding-top: 24px;
+  margin-bottom: 0;
+  z-index: 998;
+}
+
+#controlButtons {
+  margin-top: 20px;
+}
+
+#imageControlButtons {
+  margin-top: 20px;
+}
+
+.imageControlSlider {
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#drawButtons {
+  margin-top: 20px;
+}
+
+/* Upload Gcode dialog */
+#uploadGcode {
+  width: 60%;
+}
+
+.uploadGcodePreview {
+  font-size: small;
+  margin-top: 40px;
+}
+
+#previewCanvas {
+  width: 60%;
+  height: auto;
+}
+
+.uploadGcodeHeader {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  width: 100%;
+}
+
+#uploadGcodeTitle {
+  font-size: 20px;
+}
+
+#uploadGcodeSelectedFile {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#uploadGcodeError {
+  margin-top: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+
+/* Etch control dialog */
+#etchControl {
+  width: 80%;
+}
+
+#etchControlTitle {
+  font-size: 20px;
+}
+
+
+#loginTab {
+  font-size: 18px;
+}
+
+#aboutDescription {
+  font-size: 18px;
+}
+
+
+/* Gcode file list UI */
+
+#fileList {
+  padding-top: 10px;
+}
+
+.gcode-line {
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.gcode-card {
+  width: 100%;
+}
+
+.gcode-card > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+
+.gcode-title-line {
+  font-size: 16px;
+}
+
+/*
+.gcode-card.mdl-card {
+  width: 90%;
+)
+*/
+
+/* Firmware list UI */
+#firmwarelist {
+  padding-top: 10px;
+}
+
+.firmware-line {
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.firmware-card {
+  width: 100%;
+}
+
+.firmware-title-line {
+  display: block;
+  width: 100%;
+}
+
+.strip-id {
+}
+
+.firmware-status {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-row-gap: 5px;
+}
+
+.firmware-card-buttons {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: [delete] 80px;
+  width: 90%;
+}
+
+.firmware-card-buttons > button {
+  justify-self: left;
+}
+
+#firmwareDeleteButton {
+  grid-column-start: delete;
+}
+
+/* Editor UI */
+#editor {
+  width: 80%;
+}
+
+.editorHeader {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  width: 100%;
+}
+
+#editorTitle {
+  font-size: 16px;
+}
+
+#swatch1, #swatch2 {
+  width: 20%;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 40%;
+  background-image: none;
+}
+#red1 .ui-slider-range { background: #ef2929; }
+#red1 .ui-slider-handle { border-color: #ef2929; }
+#green1 .ui-slider-range { background: #8ae234; }
+#green1 .ui-slider-handle { border-color: #8ae234; }
+#blue1 .ui-slider-range { background: #729fcf; }
+#blue1 .ui-slider-handle { border-color: #729fcf; }
+
+#red2 .ui-slider-range { background: #ef2929; }
+#red2 .ui-slider-handle { border-color: #ef2929; }
+#green2 .ui-slider-range { background: #8ae234; }
+#green2 .ui-slider-handle { border-color: #8ae234; }
+#blue2 .ui-slider-range { background: #729fcf; }
+#blue2 .ui-slider-handle { border-color: #729fcf; }
+
+#deleteStrip {
+  width: 80%;
+}
+
+.deleteStripHeader {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  width: 100%;
+}
+
+#deleteStripTitle {
+  font-size: 16px;
+}
+
+/* Firmware UI */
+#firmwareUploadButton {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  padding-top: 24px;
+  margin-bottom: 0;
+  z-index: 998;
+}
+
+.mdl-button--file {
+  input {
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    z-index: 4;
+  }
+}
+
+.mdl-textfield--file {
+  .mdl-textfield__input {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+  }
+  .mdl-button--file {
+    right: 0;
+  }
+}
+
+
+#deleteFirmware {
+  width: 80%;
+}
+
+.deleteFirmwareHeader {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  width: 100%;
+}
+
+.deleteFirmwareHeader > button {
+  justify-self: right;
+}
+
+#deleteFirmwareTitle {
+  font-size: 16px;
+}
+
